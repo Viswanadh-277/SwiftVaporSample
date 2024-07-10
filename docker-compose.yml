@@ -29,6 +29,7 @@ x-shared_environment: &shared_environment
 services:
   app:
     image: sample--vapor--a-p-i:latest
+    restart: always
     build:
       context: .
     environment:
